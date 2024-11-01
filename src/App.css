@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .button-primary{
+    @apply bg-bright-red text-white rounded-full px-9 lg:px-7 py-4 lg:py-[10px] font-medium shadow-lg shadow-bright-red/50 w-fit h-fit hover:opacity-80 transition-all duration-300 ease-in-out;
+  }
+
+  .button-secondary{
+    @apply bg-white text-bright-red rounded-full px-9 lg:px-7 py-4 lg:py-[10px] font-medium shadow-lg w-fit h-fit hover:opacity-80 transition-all duration-300 ease-in-out;
+  }
+
+  .input{
+    @apply bg-white px-3 py-[10px] outline-none placeholder:text-dark-grayish-blue text-sm text-bright-red focus:border-[1.5px] focus:border-bright-red;
+  }
+}
+
+body{
+  font-family: "Be Vietnam Pro", serif;
+}
+
