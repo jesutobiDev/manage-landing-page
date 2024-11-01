@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../images/footer-logo.svg";
 import facebook from "../images/icon-facebook.svg";
