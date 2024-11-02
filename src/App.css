@@ -42,5 +42,17 @@ body{
   background-color: #f25f3a;
   opacity: 1;
 }
+.menu {
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-hidden {
+  transform: translateX(-100%);
+}
+
+.menu-visible {
+  transform: translateX(0);
+}
+
 
 

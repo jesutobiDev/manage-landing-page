@@ -41,13 +41,13 @@ const testimonialsData: Testimonial[] = [
 
 const TestimonialElement: FC<Testimonial> = ({ name, text, image }) => {
   return (
-    <div className="bg-very-light-gray w-11/12 md:w-[350px] h-auto p-10 relative overflow-visible rounded-lg">
+    <div className="bg-very-light-gray w-11/12 max-w-[400px] md:w-[550px] h-[200px] p-10 relative overflow-visible rounded-lg">
       <img
         src={image}
         alt={`${name}'s testimonial`}
         className="w-16 h-16 rounded-full absolute -top-8 left-0 right-0 mx-auto object-cover"
       />
-      <div className="flex flex-col items-center text-center gap-2 pt-8">
+      <div className="flex flex-col items-center text-center gap-2 pt-6">
         <p className="font-semibold text-dark-blue">{name}</p>
         <p className="text-sm text-dark-grayish-blue">{text}</p>
       </div>
@@ -58,22 +58,35 @@ const TestimonialElement: FC<Testimonial> = ({ name, text, image }) => {
 const Testimonials: FC = () => {
   return (
     <section className="py-16 flex flex-col space-y-10 items-center">
-      <p className="text-3xl text-dark-blue font-bold mb-6">What they&apos;ve said</p>
+      <p className="text-3xl text-dark-blue font-bold mb-6">
+        What they&apos;ve said
+      </p>
       <Swiper
         modules={[Autoplay, Pagination]}
-        spaceBetween={20}
-        slidesPerView="auto"
+        spaceBetween={10}
+        slidesPerView={1}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10, 
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+        }}
         loop={true}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         pagination={{ el: ".custom-pagination", clickable: true }}
-        className="w-full flex justify-center overflow-visible bg-red-500"
+        className="w-full overflow-visible"
       >
         {testimonialsData.map((testimonial, index) => (
-          <SwiperSlide key={index} className="flex justify-center">
+          <SwiperSlide key={index} className="flex justify-center items-center">
             <TestimonialElement {...testimonial} />
           </SwiperSlide>
         ))}
       </Swiper>
+
       <div className="custom-pagination mt-4 lg:hidden"></div>
       <Link to="/" className="button-primary">
         Get Started
