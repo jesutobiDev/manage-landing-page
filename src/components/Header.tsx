@@ -34,8 +34,8 @@ const Header: FC = () => {
         />
       </div>
       <div
-        className={`bg-very-dark-blue/10 lg:bg-transparent w-screen h-screen lg:w-auto lg:h-auto absolute top-0 left-0 lg:static py-12 px-5 lg:py-0 lg:px-0 space-y-10 lg:space-y-0 menu ${
-          menuOpen ? "menu-visible" : "menu-hidden"
+        className={`bg-very-dark-blue/10 lg:bg-transparent w-screen h-screen lg:w-auto lg:h-auto absolute top-0 left-0 lg:static py-12 px-5 lg:py-0 lg:px-0 space-y-10 lg:space-y-0 transition-transform duration-300 ease-in-out ${
+          menuOpen ? "translate-x-0 lg:translate-x-full transition-transform lg:transition-none" : "-translate-x-full lg:translate-x-0 transition-transform lg:transition-none"
         }`}
       >
         <div className="lg:hidden flex items-center justify-between">
