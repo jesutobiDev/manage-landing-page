@@ -21,7 +21,7 @@ const Header: FC = () => {
   }, [menuOpen]);
 
   return (
-    <header className="flex items-center justify-between px-5 py-12 lg:p-16">
+    <header className="flex items-center justify-between px-5 py-12 lg:py-20 lg:px-28">
       <div className="flex items-center justify-between w-screen lg:w-auto">
         <Link to="/" className={`${menuOpen ? 'hidden' : 'flex'}`}>
           <img src={Logo} alt="logo" />

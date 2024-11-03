@@ -9,7 +9,7 @@ import instagram from "../images/icon-instagram.svg";
 
 const Footer: FC = () => {
   return (
-    <footer className="px-10 lg:px-16 flex flex-col-reverse gap-y-10 lg:gap-0 lg:flex-row justify-between py-16 bg-very-dark-blue h-auto">
+    <footer className="px-10 lg:py-20 lg:px-28 flex flex-col-reverse gap-y-10 lg:gap-0 lg:flex-row justify-between py-16 bg-very-dark-blue h-auto">
       <div className="items-center md:items-start lg:justify-between flex flex-col-reverse lg:flex-col gap-10">
         <p className="text-white opacity-60 font-light text-right lg:hidden">
           Copyright 2020. All Rights Reserved
@@ -71,7 +71,7 @@ const Footer: FC = () => {
       </div>
 
       <div className="flex flex-col justify-between">
-        <form action="" className="flex gap-3 md:w-[350px]">
+        <form className="flex gap-3 md:w-[350px]">
           <input
             type="email"
             name="email"

@@ -9,14 +9,14 @@ import "./App.css";
 
 const App: React.FC = () => {
   return (
-    <div className="overflow-x-hidden relative">
+    <main className="overflow-x-hidden relative">
       <Header />
       <Hero />
       <Features />
       <Testimonials />
       <Simplify />
       <Footer />
-    </div>
+    </main>
   );
 };
 

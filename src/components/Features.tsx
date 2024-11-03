@@ -25,11 +25,11 @@ const featuresData: Feature[] = [
 
 const Features: FC = () => {
   return (
-    <section className="flex flex-col md:flex-row gap-10 md:p-16 text-center md:text-left">
+    <section className="flex flex-col md:flex-row gap-10 lg:py-20 lg:px-28 text-center md:text-left">
       <div className="flex-1 space-y-5 p-5 md:p-0">
-        <p className="text-3xl text-dark-blue font-bold max-w-[450px]">
+        <h2 className="text-3xl text-dark-blue font-bold max-w-[450px]">
           What&apos;s different about Manage?
-        </p>
+        </h2>
         <p className="text-dark-grayish-blue max-w-[400px]">
           Manage provides all the functionality your team needs, without the
           complexity. Our software is tailor-made for modern digital product

@@ -58,9 +58,9 @@ const TestimonialElement: FC<Testimonial> = ({ name, text, image }) => {
 const Testimonials: FC = () => {
   return (
     <section className="py-16 flex flex-col space-y-10 items-center">
-      <p className="text-3xl text-dark-blue font-bold mb-6">
+      <h3 className="text-3xl text-dark-blue font-bold mb-6">
         What they&apos;ve said
-      </p>
+      </h3>
       <Swiper
         modules={[Autoplay, Pagination]}
         spaceBetween={10}
